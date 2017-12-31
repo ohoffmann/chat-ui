@@ -1,0 +1,55 @@
+.login-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 50%;
+    background-color: black;
+    margin: auto;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: center;
+}
+
+.login-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-name-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+.title {
+    font-size: 200%;
+}
+
+.user-name-input {
+    font-size: 200%;
+    letter-spacing: 3px;
+    margin-right: 10px;
+}
+
+.title, .user-name-input {
+    color: #fff;
+    font-weight: 100;
+}
+
+.user-btn {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    vertical-align: bottom;
+}

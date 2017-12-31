@@ -1,0 +1,48 @@
+.ta-container {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    height: 100px;
+    width: 1127px;
+    background-color: #eeeeee;
+}
+
+.ta-user-details {
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.ta-user-name {
+    margin-bottom: 5px;
+    height: 15px;
+    text-align: center;
+}
+
+.ta-user-image {
+    text-align: center;
+    margin-left: 5px;
+}
+
+.ta-user-text-container {
+    display: inline-block;
+    height: 100px;
+}
+
+.ta-user-text {
+    display: inline-block;
+    margin-right: 10px;
+    width: 900px;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.ta-user-send-btn {
+    display: inline-block;
+    width: 100px;
+}
