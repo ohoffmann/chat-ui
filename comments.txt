@@ -1,9 +1,22 @@
 Add your general design and decision comments here:
 
+I created a React project and seperated the components according to the sections on the screen.
+each section has its store - The user details in the user-store file and the messages that has the messages-store.
 
+I didnt have ping on Saturday, so I needed to create my own server with server.js file. To run it you should go to ->
+chat-ui/src in the cmd and run - node server.js.
 
+I had a problem with where to put the "const socket - io("localhost:8000");"
+I think I need to put it only in one place, probably should have created a service file that imports it in one place.
 
 
 
 Feedback regarding this exam is always welcomed.
 What did you like? What didn't you like? What was missing?
+
+It was the first time I created my own server - I needed to read a lot about socket.io.
+I liked it after having a few problems with how to combine it with react and where should I put everything..
+another problem I had is that I'm used to typescript and I needed to write the code with javascript..
+
+I think the task is good, although I couldnt connect to the endpoint you gave me.
+and screenshot folder is not attached..

@@ -1,10 +1,12 @@
 import { observable, action } from 'mobx';
 import io from 'socket.io-client';
 
+const socket = io('http://localhost:8000');
+
 class UserStore {
     @observable userName = "";
     avatar = '';
-    socket = io('http://localhost:8000');
+    
 
     constructor() {
         var randomNumber = Math.floor(Math.random() * 5) + 1;
@@ -31,7 +33,7 @@ class UserStore {
     @action
     setUsername(userName) {
         this.userName = userName;
-        this.socket.emit('add user', userName);
+        socket.emit('add user', userName);
     }
 }
 

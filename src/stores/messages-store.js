@@ -3,13 +3,15 @@ import uuid from 'uuid';
 import io from 'socket.io-client';
 import userStore from './user-store';
 
+const socket = io('http://localhost:8000');
+
 class MessagesStore {
     @observable messages = [];
     @observable message = '';
-    socket = io('http://localhost:8000');
+    
 
     constructor() {
-        this.socket.on('new message', (msg) => {
+        socket.on('new message', (msg) => {
             console.log('new msg has arrived');
             if(msg.userName !== userStore.userName)
                 this.addMessage(msg, false);
@@ -27,7 +29,8 @@ class MessagesStore {
           });
 
         // tell server to execute 'new message' and send along one parameter
-        this.socket.emit('new message', messageObj);
+        if(emit)
+            socket.emit('new message', messageObj);
     }
 
     @action
